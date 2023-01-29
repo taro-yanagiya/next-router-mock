@@ -20,7 +20,8 @@
     "clean": "rimraf dist",
     "build:watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "preversion": "npm run checks"
+    "preversion": "npm run checks",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
